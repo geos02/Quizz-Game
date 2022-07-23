@@ -77,6 +77,8 @@ function checkAnswer(answer) {
     console.log(`Has seleccionado: ${answer} y la respuesta correcta es ${correct}`);
     if(answer === correct)
         score++;
+    
+    resetRadioButtons();
 }
 
 function finishQuizz() {
@@ -84,6 +86,16 @@ function finishQuizz() {
     document.querySelector('.score-container').style.display = 'block';
 
     scoreText.textContent = `Score: ${score}/${maxScore}!! Congratulations!!`
+
+    // vuelve a cargar la pagína
+    setTimeout(() => {
+        location.reload();
+    }, 3000)
+}
+
+function resetRadioButtons() {
+
+    radioButtons.forEach( radioButton => radioButton.checked = false );
 }
 
 button.addEventListener('click', () => {
