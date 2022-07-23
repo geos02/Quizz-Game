@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <div class="quizz-container">
+        <div class="quizz-content">
+            <p class="quizz-question"></p>
+            <div class="radio-container">
+                <div class="field">
+                    <input class="answer-input" type="radio" id="answer-1" name="answer" value="a">
+                    <label id="label-1" class="answer-label" for="answer-1"></label>
+                </div>
+    
+                <div class="field">
+                    <input class="answer-input" type="radio" id="answer-2" name="answer" value="b">
+                    <label id="label-2" class="answer-label" for="answer-2"></label>
+                </div>
+    
+                <div class="field">
+                    <input class="answer-input" type="radio" id="answer-3" name="answer" value="c">
+                    <label id="label-3" class="answer-label" for="answer-3"></label>
+                </div>
+            </div>
+        </div>
+        <a class="quizz-button" href="#">Submit</a>
+    </div>
+
+    <div class="score-container">
+        <p class="score-text">Score: 3/3!! Congratulations!!</p>
+    </div>
+</body>
+</html>
